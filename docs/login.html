@@ -8,40 +8,79 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">FREAKS</a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="information.html">About us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="others.html">Other brands</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="information.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="login.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="others.html">Otras marcas</a></li>
                 </ul>
             </div>
         </nav>
-        <center>
-            <h1>Rellena el formulario para recibir informacion</h1>
-            <form  action="/your_backend_url" method="post" enctype="application/x-www-form-urlencoded">
+        <br>
+        <br>
+            <!-- Contact-->
+        <div class="container bg-light" >
+            <br>
+            <h3>Contacta con nosotros</h3>
+            <br>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Tus Email">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Tu contraseña">
+            </div>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required="required" placeholder="Enter your name" /><br />
+            <div class="col-12">
+                <label for="inputSur" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="inputSur" placeholder="Tus Apellidos">
+            </div>
+                <div class="col">
+                    <label for="inputState" class="form-label">Ciudad</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elige...</option>
+                        <option>Madrid</option>
+                        <option>Barcelona</option>
+                        <option>Bilbao</option>
+                        <option>Otra</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="inputAge" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="inputAge">
+                </div>
+            <div class="col-12">
 
-                <br />
+                <div  class="form-check">
+                    <input align="center" class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Acepto las condiciones de FREAKS
+                    </label>
+                </div>
+            </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required="required" placeholder="Enter your email" /><br />
-
-                <br />
-
-                <label for="DOB">Date of birth:</label>
-                <input type="date" id="DOB" name="DOB" required="required"/><br />
-
-                <br />
-
-                <label for="tick">Aceptas nuestras condiciones</label>
-                <input type="checkbox" id="tick" name="tick" required="required" /><br />
-
-                <input type="submit" value="Submit">
-            </form>
-            <h4 align="center"><a href="./index.html">Volver atras</a></h4>
-        </center>
+            <div align="center" class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <br>
+            </div>
+        </form>
+            <br>
+        </div>
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; FREAKS</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
